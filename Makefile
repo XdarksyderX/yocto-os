@@ -5,6 +5,9 @@ BUILD_DIR=build
 
 .PHONY: all floppy_image kernel bootloader clean always
 
+
+all: floppy_image
+
 #Floppy Image
 floppy_image: $(BUILD_DIR)/main.bin $(BUILD_DIR)/main_floppy.img
 
