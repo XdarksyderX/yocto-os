@@ -5,25 +5,30 @@
 
 ## Overview
 
-**Yocto-OS** is a minimal operating system built for educational purposes. The name "Yocto" is indicative of its incredibly small size. Written primarily in Assembly, this project aims to provide insights into the low-level workings of operating systems, from bootloading to kernel functionalities.
+**Yocto-OS** is a minimalistic operating system built for educational purposes. The name "Yocto" denotes its incredibly small size. Although it was initially written mainly in Assembly, this project has now evolved to provide deeper insights into the low-level mechanisms of operating systems, from bootloading to kernel functionalities. The project has shifted towards the UEFI environment and is primarily written in C.
 
 ## Features
 
-- 🚀 Super lightweight and minimal codebase
-- 📚 Educational comments explaining the logic
-- 💼 NASM assembler for compilation
-- 💾 FAT12 Filesystem support
-- 🛡️ Includes a basic bootloader
+- 🚀 Extremely lightweight and minimal codebase.
+- 📚 Educational comments explaining the logic.
+- 💼 Uses the NASM assembler for compilation in its assembly parts.
+- 💼 Written in C for UEFI and kernel functionalities.
+- 💾 FAT12 Filesystem support.
+- 🛡️ Incorporates `limine` as the bootloader for UEFI.
 
 ## Prerequisites
 
 - NASM (Netwide Assembler)
 - GNU Make
 - QEMU (for emulation, optional)
+- Development tools for C
+- xorriso
+- mtools
+- gd
 
 ## Building
 
 To build the project, navigate to the root directory and run:
 
 ```bash
-make all
+bash run.sh
