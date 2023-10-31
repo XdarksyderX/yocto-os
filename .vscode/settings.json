@@ -20,6 +20,11 @@
 		"printf.h": "c",
 		"kernel_printer.h": "c",
 		"sstream": "c",
-		"regex": "c"
+		"regex": "c",
+		"atomic": "c",
+		"memory.h": "c",
+		"string.h": "c",
+		"idt.h": "c",
+		"interrupts.h": "c"
 	}
 }
